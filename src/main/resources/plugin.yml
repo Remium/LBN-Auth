@@ -1,0 +1,13 @@
+name: LBN-Auth
+main: net.l_bulb.plugins.auth.LBNAuth
+version: 1.0
+commands:
+   auth:
+      description: This command for web auth.
+      usage: /<command> [authkey]
+      permission: lbn.auth.execute
+      permission-message: You don't have permission.
+permissions:
+  lbn.auth.execute:
+    description: Allows web auth
+    default: true
